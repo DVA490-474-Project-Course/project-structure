@@ -1,5 +1,6 @@
 # Project Structure
-This repository is simply here to show and teach the project structure which you should adhear to.
+This repository is simply here to show and teach the project structure which you should adhere to.
+The project subscribes to the Google C++ Style Guide, available at: https://google.github.io/styleguide/cppguide.html
 
 ## Descriptions
 - src: contains all source files and their respective header files
