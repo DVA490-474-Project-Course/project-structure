@@ -1,0 +1,3 @@
+# build and Makefile should not be stored in git
+build
+Makefile
