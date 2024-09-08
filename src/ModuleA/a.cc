@@ -23,14 +23,18 @@
 // Projects .h files.
 #include ""
 
+// If temp_var does not need to be referenced outside of this file, then use static (EXCEPT IF IT IS AN .h FILE!).
+static int temp_var = 5;
 
 void temp_func()
 {
-  // If temp_var does not need to be referenced outside of this file, then use static (EXCEPT IF IT IS A .h FILE!).
   // Local variables should be initialized in the decleration.
-  static int temp_var = 5;
+  // Variables should be declared as close to the place where they will be used as possible
+  int var = 3;
+  DoSomething(var);
 
   // variables needed for: if, for, while statements should be declared and initialized in those statements.
+  // UNLESS IT IS AN OBJECT!
   for(int i = 0; i < 100; ++i)
   {
     // DO NOT DECLARE VARIABLES IN LOOPS!
