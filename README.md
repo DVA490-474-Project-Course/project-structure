@@ -13,3 +13,8 @@ The project subscribes to the Google C++ Style Guide, available at: https://goog
 - docs: folder for documentation files.
 - README.md: (the file you are currently viewing) should provide general project overview, contributors, stakeholders, contact information, dependencies and requirements, instructions of how to use/install the project.
 - .gitignore: files/directories that should be ignored are build, Makefile
+
+## Naming rules
+- Please favor always using longer name for clarity rather than using unclear accronyms.
+- File names: all lowercase and use _ for word seperation. C++ files end with .cc and headers with .h.
+- Directory: all lowercase and use - for word seperation.
