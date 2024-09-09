@@ -23,9 +23,10 @@ The project subscribes to the Google C++ Style Guide, available at: https://goog
 
 ## Disallowed
 The followng libraries must not be used:
-- <ratio>
-- <cfenv> and <fenv.h>
-- <filesystem>
-- <coroutine>
+- &lt;ratio&gt;
+- &lt;cfenv&gt; and &lt;fenv.h&gt;
+- &lt;filesystem&gt;
+- &lt;coroutine&gt;
 - Do not use any C++20 modules
-- Check https://google.github.io/styleguide/cppguide.html for the libraries from Boost library collection which are allowed.
+
+Check https://google.github.io/styleguide/cppguide.html for the libraries from Boost library collection which are allowed.
