@@ -15,6 +15,17 @@ The project subscribes to the Google C++ Style Guide, available at: https://goog
 - .gitignore: files/directories that should be ignored are build, Makefile
 
 ## Naming rules
-- Please favor always using longer name for clarity rather than using unclear accronyms.
-- File names: all lowercase and use _ for word seperation. C++ files end with .cc and headers with .h.
+- Please favor always using longer name for clarity rather than using unclear accronyms. 
+- File names: all lowercase and use _ for word seperation. C++ files end with .cc and headers with .h. Filenames should be very specific.
 - Directory: all lowercase and use - for word seperation.
+- All types including classes, struct, enums, type aliases, type templates, concept names: start with capital letter and have capital letter at the begining of each word.
+- Variables: all lower case with _ for word seperation.
+
+## Disallowed
+The followng libraries must not be used:
+- <ratio>
+- <cfenv> and <fenv.h>
+- <filesystem>
+- <coroutine>
+- Do not use any C++20 modules
+- Check https://google.github.io/styleguide/cppguide.html for the libraries from Boost library collection which are allowed.

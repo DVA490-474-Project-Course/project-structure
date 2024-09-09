@@ -10,6 +10,8 @@
 
 #include "OtherHeaderNeeded.h"
 
+// Macros are named with all capital letters and _ to seperate words.
+// Header guards also end with a _.
 #ifndef PROJECTSTRUCTURE_MODULEA_A_H_ 
 #define PROJECTSTRUCTURE_MODULEA_A_H_ 
 
