@@ -9,3 +9,5 @@
 // real file.
 // License: See LICENSE file for license details.
 //==============================================================================
+
+// Placeholder file used for showing structure, nothing else.

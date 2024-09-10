@@ -34,7 +34,7 @@
 
 
 // - If this file needs something from other_header_needed.h then it should be 
-// included, even if it already is included in a.h. This goes for all 
+// included, even if it already is included in someting.h. This goes for all
 // inclusions. What this means is that you should not rely on transistive 
 // inclusions.
 // - Headers should be included in the order of: related headers, C system 
@@ -45,11 +45,12 @@
 // - Only use <> for includes when the library requires it.
 
 // - Related .h file, related maybe because we are for example implementing or 
-// testing the stuff from a.h.
-// - Avoid forward declerations, instead include the headers you need (see a.h).
+// testing the stuff from something.h.
+// - Avoid forward declerations, instead include the headers you need (see 
+// something.h).
 // - Project headers should be included as decendents of the src directory of 
 // the project.
-#include "module-a/a.h"
+#include "something.h"
 
 // Example C system header.
 #include <unistd.h>
@@ -82,9 +83,9 @@ namespace module_a
 // new word.
 void SomeFunction();
 
-// - Using the class, enum and struct from a.h, and avoiding forward decleration 
-// since they were declared in a.h and then just included (from a.h) for use 
-// here.
+// - Using the class, enum and struct from something.h, and avoiding forward 
+// decleration since they were declared in something.h and then just included 
+// (from something.h) for use here.
 DoSomething(SomeClass);
 DoSomethingElse(SomeEnum, SomeStruct);
 

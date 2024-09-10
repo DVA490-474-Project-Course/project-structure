@@ -3,7 +3,10 @@
 // Author: Carl Larsson
 // Creation date: 2024-09-09
 // Last modified: 2024-09-09 by Carl Larsson
-// Description: Example .h file structure and Google C++ style guide, it is only meant to be used as a template. All functions and variables are dummy and the contents of this file should in no way been seen as a reflection of a real file.
+// Description: Example .h file structure and Google C++ style guide, it is only 
+// meant to be used as a template. All functions and variables are dummy and the 
+// contents of this file should in no way been seen as a reflection of a real 
+// file.
 // License: See LICENSE file for license details.
 //==============================================================================
 
@@ -43,10 +46,10 @@
 // Header guards also end with a _.
 #ifndef PROJECTSTRUCTURE_MODULEA_A_H_ 
 #define PROJECTSTRUCTURE_MODULEA_A_H_ 
-// - If a.cc needs something from other_header_needed.h and a.cc includes it, 
-// then it should still be included in this file (a.h), always include in both 
-// .h and .cc file. This goes for all inclusions. What this means is that you 
-// should not rely on transistive inclusions.
+// - If something.cc needs something from other_header_needed.h and something.cc 
+// includes it, then it should still be included in this file (something.h), 
+// always include in both .h and .cc file. This goes for all inclusions. What 
+// this means is that you should not rely on transistive inclusions.
 // - Headers should be included in the order of: related headers, C system 
 // headers, C++ standard library headers, other libraries headers, and then 
 // finally projects headers.

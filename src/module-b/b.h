@@ -46,8 +46,8 @@
 // Header guards also end with a _.
 #ifndef PROJECTSTRUCTURE_MODULEA_A_H_ 
 #define PROJECTSTRUCTURE_MODULEA_A_H_ 
-// - If a.cc needs something from other_header_needed.h and a.cc includes it, 
-// then it should still be included in this file (a.h), always include in both 
+// - If b.cc needs something from other_header_needed.h and b.cc includes it, 
+// then it should still be included in this file (b.h), always include in both 
 // .h and .cc file. This goes for all inclusions. What this means is that you 
 // should not rely on transistive inclusions.
 // - Headers should be included in the order of: related headers, C system 
