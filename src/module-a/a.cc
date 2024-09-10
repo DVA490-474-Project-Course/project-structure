@@ -64,24 +64,27 @@
 #include "somewhere/some_project_header.h"
 
 
-// Always try to place code in namespaces
-// Do not use inline namespaces
+// Always try to place code in namespaces.
+// Do not use inline namespaces.
 // Name should be unique names and based on project name and possibly path.
 // namespace names are all lowercase with _ for word seperation.
+// Project name
 namespace project_structure
 {
+// Path
 namespace module_a
 {
 
+// The contents of namespaces should not be indented.
 ...
 
-// - The contents of namespaces should not be indented.
-// - Function names begin with capital letter and have capital letter for each
+// Function names begin with capital letter and have capital letter for each
 // new word.
 void SomeFunction();
 
 // - Using the class, enum and struct from a.h, and avoiding forward decleration 
-// since they were declared in a.h and then just include a.h and use here
+// since they were declared in a.h and then just included (from a.h) for use 
+// here.
 DoSomething(SomeClass);
 DoSomethingElse(SomeEnum, SomeStruct);
 
@@ -110,12 +113,14 @@ DoSomethingElse(SomeEnum, SomeStruct);
 // and how to use it. Also describe inputs and outputs. Additionally, for 
 // pointer argumtents it should be described it they can be null and what 
 // happens if they are.
+// - Function names begin with capital letter and have capital letter for each
+// new word.
 static int TempFunc(int some_other_input,const *some_input, 
     int *some_input_output, void *some_output)
 {
   // - Local variables should be initialized in the decleration.
   // - Variables should be declared as close to the place where they will be 
-  // used as possible
+  // used as possible.
   // - DO NOT USE STATIC LOCAL VARIABLES!
   // - DO NOT USE SHORT, LONG OR LONG LONG!
   int var = 3;
@@ -124,15 +129,15 @@ static int TempFunc(int some_other_input,const *some_input,
   // initialization like int64_t{1}.
   DoSomething(int64_t{var});
 
-  // Always write floating-point with radix point and digits on both sides
+  // Always write floating-point with radix point and digits on both sides.
   float some_float = 1.0f;
   // DO NOT USE LONG DOUBLE!
   double some_double = -0.5L;
   double some_other_double = 1000.0e6;
 
-  // - If a pointer is suppossed to not point to anything, or end of list or 
-  // similar, then use nullptr (also use it to check if pointer points to 
-  // something).
+  // - If a pointer is suppossed to not point to anything, or it is the end of 
+  // list or similar, then use nullptr (also use it to check if pointer points 
+  // to something).
   int *int_pointer = nullptr;
   // And if it is char, then use '\0'.
 
@@ -144,8 +149,7 @@ static int TempFunc(int some_other_input,const *some_input,
   memset(&data, 0, sizeof(data));
 
   // - Variables needed for: if, for, while statements should be attempted to be 
-  // declared and initialized in those statements.
-  // - UNLESS IT IS AN OBJECT!
+  // declared and initialized in those statements. UNLESS IT IS AN OBJECT!
   // - A single space should be used to separate looping and branching 
   // statements and their component/condition/iteration specifier.
   // - Single space after each semicolon (;).
@@ -156,13 +160,13 @@ static int TempFunc(int some_other_input,const *some_input,
     ...
   }
 
-  // while (condition); is not allowed
+  // while (condition); is not allowed.
   // Instead do:
   while (condition) {};
   // or
   while (condition) continue;
 
-  // Switching statements must have a default case
+  // Switching statements must have a default case.
   switch (var) 
   {
     case 0;
@@ -175,7 +179,7 @@ static int TempFunc(int some_other_input,const *some_input,
     }
   }
 
-  // - Use return values over output parameters
+  // - Use return values over output parameters.
   // - Preferably return by value, if you can not, then return by reference. 
   // Avoid returning a raw pointer, unless it can be null.
   return something;

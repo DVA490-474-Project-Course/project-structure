@@ -91,7 +91,7 @@ constexpr int kTempVar = 5;
 int global_var = 1;
 
 
-// - Avoiding forward decleration
+// - Avoiding forward decleration.
 // - A class's API must specify whether the class is copyable, move-only, or 
 // neither.
 // - Class names start with capital letter and every new word begins with 
@@ -113,7 +113,7 @@ class SomeClass
  // (NOT TAB!).
  public:
   // Class data members should be named with all lowercase and _ for seperating 
-  // words and on _ in the end.
+  // words and one _ in the end.
   const int class_var_;
  // Classes data members which are part of a test fixture class (defined in a 
  // .cc file) can be protected if using Google Test.
@@ -127,7 +127,7 @@ class SomeClass
 // - For enums, declare them using enum class, not just enum.
 // - Enums are named just like constants.
 // - Enums begin with lower case k and then each new word begins with capital
-// - letter. 
+// letter. 
 enum class SomeEnum 
 {
   kEnumVarOne = 1;
@@ -136,8 +136,8 @@ enum class SomeEnum
 
 // - Only use structs for passive objects that carry data, everything else 
 // should be a class.
-// - Try to use structs over pairs and tuples
-// - Struct names start with capital letter nad every new word begins with 
+// - Try to use structs over pairs and tuples.
+// - Struct names start with capital letter and every new word begins with 
 // capital letter.
 struct SomeStruct
 {
