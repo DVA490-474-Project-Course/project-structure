@@ -1,6 +1,6 @@
 # build, bin, Makefile and generated should not be stored in git
-build
-bin
+# build should in reality be ignored but for the sake of the template illustrating the structure, then it is included
+#build
 Makefile
 # generated should in reality be ignored but for the sake of the template illustrating the structure, then it is included
 #generated
