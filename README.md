@@ -27,7 +27,7 @@ the CMake file).
 - README.md: (the file you are currently viewing) should provide general 
 project overview, contributors, stakeholders, contact information, dependencies 
 and requirements, sponsors, instructions of how to use/install the project.
-- .gitignore: files/directories that should be ignored are build, Makefile.
+- .gitignore: files/directories that should be ignored are build, bin, Makefile, generated.
 
 ## Naming rules
 - Please favor always using longer name for clarity rather than using unclear 
