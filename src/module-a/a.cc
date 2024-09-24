@@ -32,6 +32,7 @@
 // never use more than two.
 // - Each line of text must be 80 or less characters long.
 
+// .h files should contain the decleration, the .cc file the implementation
 
 // - If this file needs something from other_header_needed.h then it should be 
 // included, even if it already is included in a.h. This goes for all 
