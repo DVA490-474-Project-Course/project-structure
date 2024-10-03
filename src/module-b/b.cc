@@ -21,7 +21,7 @@
 // - If using inheritance, make it public.
 // - Normal indent should be 2 spaces, 4 spaces is used for when wrapping (like 
 // for example wrapping condition or arguments).
-// - Use // to create comments.
+// - Use /* */ to create comments.
 // - The use of the "using" directive to remove the need to write the namespace 
 // name is FORBIDDEN!
 // - Try to keep as small and local scope as possible, if a class, enum, struct 
