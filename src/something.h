@@ -35,6 +35,7 @@
  * - Each line of text must be 80 or less characters long.
  */
 
+/* .h files should contain the decleration, the .cc file the implementation */
 
 /* 
  * Always use header guards in .h files.
