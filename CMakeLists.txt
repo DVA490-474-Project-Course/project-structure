@@ -1,1 +1,1 @@
-// Placeholder file used for showing structure, nothing else.
+# Placeholder file used for showing structure, nothing else.
