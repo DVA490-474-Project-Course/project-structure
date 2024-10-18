@@ -150,7 +150,7 @@ static int TempFunc(int some_other_input,const *some_input,
   /* Always write floating-point with radix point and digits on both sides. */
   float some_float = 1.0f;
   /* DO NOT USE LONG DOUBLE! */
-  double some_double = -0.5L;
+  double some_double = -0.5;
   double some_other_double = 1000.0e6;
 
   /*
