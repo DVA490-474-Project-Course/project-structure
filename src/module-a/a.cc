@@ -129,7 +129,11 @@ DoSomethingElse(SomeEnum, SomeStruct);
  * - Function names begin with capital letter and have capital letter for each
  * new word.
  */
-static int TempFunc(int some_other_input,const *some_input, 
+/* 
+ * Constants start with a k and then capital letter at the beginning of each 
+ * new word.
+ */
+static int TempFunc(int some_other_input,const *kSomeInput, 
     int *some_input_output, void *some_output)
 {
   /*

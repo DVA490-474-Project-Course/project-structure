@@ -119,7 +119,7 @@ namespace module_a
  *
  * @warning This function doesn't work, its just a placeholder.
  */
-static int TempFunc(int some_other_input,const *some_input, 
+static int TempFunc(int some_other_input,const *kSomeInput, 
     int *some_input_output, void *some_output);
 
 /*
@@ -167,15 +167,21 @@ class SomeClass
   */
  public:
   /*
-   * Class data members should be named with all lowercase and _ for seperating 
-   * words and one _ in the end.
+   * This is a special case where its a constant and a class data member.
+   * Thus we merge starting with k and capital letter at begining of each 
+   * subsequent word (constant), together with lower case with _ seperation
+   * and ending with _ (class data member).
    */
-  const int class_var_;
+  const int kClassConst_;
  /*
   * Classes data members which are part of a test fixture class (defined in a 
   * .cc file) can be protected if using Google Test.
   */
  protected:
+  /*
+   * Class data members should be named with all lowercase and _ for seperating 
+   * words and one _ in the end.
+   */
   char class_char_;
  /* Classes data members should be private unless they are constants. */
  private:
